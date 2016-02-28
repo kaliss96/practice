@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body.contenedor-principal{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    margin: 0 auto;
+    position: relative;
+    width: 1023px;
+    text-align: justify;
+}
+
+header, nav, section, article, footer{
+    display: block;
+}
+
+header{
+    height: 160px;
+    position: relative;
+}
+
+#sombra-contenido{
+    background: blue no-repeat scroll 0 0 transparent;
+    overflow: inherit;
+    padding: 10px 30px;
+    width: 970px;
+}
+
+section.articulos{
+    width: 630px;
+    float: left;
+}
+
+aside{
+    float: right;
+    margin: 0 10px 0 0;
+    width: 320px;
+}
+
+footer{
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-top: 6px solid #CCCCCC;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
+
+figure.logo{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    float: left;
+}
+
+figure.logo figcaption h1{
+    font-size: 21px;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.rs{
+    position: relative;
+    top: 40px;
+    right: 20px;
+    float: right;
+}
+
+.rs img{
+    margin: 5px;
+    float: left;
+}
+
+nav{
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;    
+    height: 50px;
+    margin: 0;
+    display: block;
+    
+background: #9dd53a; /* Old browsers */
+background: -moz-linear-gradient(top,  #9dd53a 0%, #80c217 32%, #a1d54f 50%, #7cbc0a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(32%,#80c217), color-stop(50%,#a1d54f), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
+
+}
+
+nav li{
+    float: left;
+    display: block;
+    margin: 5px;
+}
+
+nav li a{
+    color: black;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    line-height: 37px;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #d2ff52;
+}
+
+nav li a:hover{
+    background-color: #f16f5c;
+    border: 1px solid #f16f5c;
+}
+
+article.post{
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    border-top: 1px solid #ff2986;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+article.post figure{
+    float: left;
+    margin: 10px 10px 0 0;
+    width: 180px;
+}
+
+article.post a img{
+    border: 8px solid #ff2986;
+    width: 100px;
+    float: left;
+    border-radius: 10px 10px 10px 10px;
+}
+
+article.post a:hover img{
+    border: 8px solid #e73827;
+}
+
+article.post h2{
+    font-family:"Times New Roman", Times, serif;
+}
+
+article.post h2 a{
+    color: purple;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px;
+    text-decoration: none;
+}
+
+article.post .meta{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+article.post p.meta{
+    display: block;
+    background: #990099;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px #990099;
+}
+
+article.post p.meta a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    text-align: justify;
+}
+
+article.post p.meta a:hover{
+    color: pink;
+}
+
+article.post p{
+    float: left;
+    width: 410px;
+    text-align: justify;
+}
+
+article.post div.leermas{
+    float: left;
+    margin: 23px 1px 0;
+}
+
+article.post div.leermas a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    background: none repeat scroll 0 0 #990099;
+    border-radius: 10px 10px 10px 10px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+article.post div.leermas a:hover{
+    background: none repeat scroll 0 0 #990099;
+}
+
+aside h3{
+    
+background: #9dd53a; /* Old browsers */
+background: -moz-linear-gradient(top,  #9dd53a 0%, #80c217 32%, #a1d54f 50%, #7cbc0a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(32%,#80c217), color-stop(50%,#a1d54f), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
+
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: -15px 0 15px 0;
+    padding: 10px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 1px 1px 2px #fba6e1;
+}
+    
+aside div.bloques-aside{
+    padding: 10px 0;
+    border: 1px solid #627d4d;
+    background: #fafafa;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+aside ul{
+    overflow: hidden;
+}
+
+aside ul.categoria li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+aside ul.categoria li a:hover{
+    color: #a80077;
+}
+
+aside ul.categoria li{
+    margin: 10px 30px;
+    padding: 0 10px 5px 0;
+    border-bottom: 1px dotted #8f0222;
+}
+
+aside div.bloques-aside p.info{
+    margin: 10px;
+}
+
+div.bloques-aside p.info img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+nav.footer li a{
+    color: black;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 100px;
+    font-size: 15px;
+    text-transform: none;
+    text-shadow: 1px 1px 2px #8f0222;
+}
+
+nav.footer{
+    background: none repeat scroll 0 0 #8f0222;
+    height: 30px;
+    margin: 0 0 10px;
+    padding: 0 18%;
+    background: #fba6e1;
+background: #9dd53a; /* Old browsers */
+background: -moz-linear-gradient(top,  #9dd53a 0%, #80c217 32%, #a1d54f 50%, #7cbc0a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(32%,#80c217), color-stop(50%,#a1d54f), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #9dd53a 0%,#80c217 32%,#a1d54f 50%,#7cbc0a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
+}
+
+nav.footer li a:hover{
+    background: none;
+    border: none;
+    color: #8f0222;
+}
